@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="./css/all.css">
   <style>
     .footer {
-      background: gray;
+      background: lightgray;
       padding: 0;
     }
 
@@ -29,19 +29,27 @@
       text-align: center;
       padding: 15%;
     }
-    .skill>.carousel-item{
+
+    .skill>.carousel-item {
       text-align: center;
       padding: 5%;
     }
-    .works>div{
-      
+
+    .works>div {
+      margin-top: 10px;
       padding: 5%;
+    }
+
+    @media (max-width: 574px) {
+      .sm-hide {
+        display: none;
+      }
     }
   </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-sm">
       <a class="" href="#">
         <img src="https://fakeimg.pl/100x50/" alt="">
@@ -86,35 +94,47 @@
     <div class="banner carousel-inner ">
       <div class="carousel-item active" style="background-image:url(https://fakeimg.pl/100x50/)">
         <!-- <img src="https://fakeimg.pl/100x50/" class="d-block w-100 img-fluid" alt="..."> -->
-        <h2>Lorem ipsum dolor sit amet.</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, cumque.</p>
+        <h2>Lorem ipsum </h2>
+        <p>Lorem ipsum dolor sit amet </p>
+        <div>
+          123123
+          <a href=".works"></a>
+        </div>
       </div>
       <div class="carousel-item" style="background-image:url(https://fakeimg.pl/100x60/)">
-        <h2>Lorem ipsum dolor sit amet.</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, cumque.</p>
+        <h2>Lorem ipsum dolor .</h2>
+        <p>Lorem ipsum dolor sit amet consectetur .</p>
       </div>
       <div class="carousel-item" style="background-image:url(https://fakeimg.pl/100x70/)">
         <h2>Lorem ipsum dolor sit amet.</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, cumque.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
     </div>
   </div>
-  ------------------------------------
 
   <main class="container-fluid">
     <div class="container text-center p-2">
       <h3>Lorem, ipsum dolor.</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       <div class="row works">
-      <div class="col-sm-6" style="background-image: url(https://fakeimg.pl/100x50/);">Lorem ipsum dolor sit</div>
-      <div class="col-sm-6"><h3>title</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, dolorem?</p></div>
-      <div class="col-sm-6"><h3>title</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, dolorem?</p></div>
-      <div class="col-sm-6" style="background-image: url(https://fakeimg.pl/100x50/);">Lorem ipsum dolor sit.</div>
-      <div class="col-sm-6" style="background-image: url(https://fakeimg.pl/100x50/);">Lorem ipsum dolor sit.</div>
-      <div class="col-sm-6"><h3>title</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, dolorem?</p></div></div>
+        <div class="col-sm-6" style="background-image: url(https://fakeimg.pl/100x50/);">
+          <div style="height:100px"></div>
+        </div>
+        <div class="col-sm-6 sm-hide">
+          <h3>title</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, dolorem?</p>
+        </div>
+        <div class="col-sm-6 sm-hide">
+          <h3>title</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, dolorem?</p>
+        </div>
+        <div class="col-sm-6" style="background-image: url(https://fakeimg.pl/100x50/);">Lorem ipsum dolor sit.</div>
+        <div class="col-sm-6" style="background-image: url(https://fakeimg.pl/100x50/);">Lorem ipsum dolor sit.</div>
+        <div class="col-sm-6 sm-hide">
+          <h3>title</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, dolorem?</p>
+        </div>
+      </div>
     </div>
 
     <div class="row bg-danger">
@@ -153,6 +173,32 @@
       <div>
         <a href=""><img src="https://fakeimg.pl/100x50/" alt=""></a>
         <a href=""><img src="https://fakeimg.pl/100x50/" alt=""></a>
+      </div>
+    </div>
+    <div class="text-center contact">
+      <div class="container">
+        <h3>title</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, rerum.</p>
+      </div>
+      <div class="container w-50">
+        <form action="">
+          <div class="row">
+            <div class="col-lg-6 m-auto py-2">
+              <input class="w-100" type="text" id="Name" placeholder="Name">
+            </div>
+            <div class="col-lg-6 m-auto py-2">
+              <input class="w-100" type="text" id="Email" placeholder="Email">
+            </div>
+            <div class="p-2">
+              <textarea class="w-100" name="Massage" id="Massage" cols="20" rows="5"></textarea>
+              <div class="d-grid gap-2 col-6 mx-auto p-2">
+                <button class="btn btn-primary" type="button">Button</button>
+              </div>
+            </div>
+
+
+          </div>
+        </form>
       </div>
     </div>
   </main>
