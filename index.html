@@ -24,11 +24,12 @@
       width: 100%;
     }
 
-    .banner>.carousel-item {
+    .banner>.carousel-inner>.carousel-item {
       background-position: center center;
       background-size: cover;
       text-align: center;
       padding: 15%;
+      height: 75vh;
     }
 
     .skill>.carousel-item {
@@ -76,8 +77,8 @@
   </style>
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<body style="position: relative;">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light w-100" style="position: absolute; top: 0%;z-index: 9999" ;>
     <div class="container-sm">
       <a class="" href="#">
         <img src="./img/logo.png" alt="">
@@ -118,9 +119,9 @@
       </div>
     </div>
   </nav>
-  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-    <div class="banner carousel-inner ">
-      <div class="carousel-item active" style="background-image:url(https://fakeimg.pl/150x75/)">
+  <div id="carouselExampleFade" class="banner carousel slide carousel-fade" data-bs-ride="carousel" style="max-height: 100vh;">
+    <div class="carousel-inner " style="height: 100%;">
+      <div class="carousel-item active" style="background-image:url(https://fakeimg.pl/150x150/);">
         <!-- <img src="https://fakeimg.pl/100x50/" class="d-block w-100 img-fluid" alt="..."> -->
         <h2>Lorem ipsum </h2>
         <p>Lorem ipsum dolor sit amet </p>
@@ -129,11 +130,11 @@
           <a href=".works"></a>
         </div>
       </div>
-      <div class="carousel-item" style="background-image:url(https://fakeimg.pl/100x60/)">
+      <div class="carousel-item1" style="background-image:url(https://fakeimg.pl/100x150/)">
         <h2>Lorem ipsum dolor .</h2>
         <p>Lorem ipsum dolor sit amet consectetur .</p>
       </div>
-      <div class="carousel-item" style="background-image:url(https://fakeimg.pl/100x70/)">
+      <div class="carousel-item1" style="background-image:url(https://fakeimg.pl/100x150/)">
         <h2>Lorem ipsum dolor sit amet.</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
