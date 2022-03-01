@@ -39,7 +39,7 @@
 
     .works>div {
       margin-top: 10px;
-      padding: 5%;
+      padding: 2% 2%;
     }
 
     .contact {
@@ -78,7 +78,7 @@
 </head>
 
 <body style="position: relative;">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light w-100" style="position: absolute; top: 0%;z-index: 9999" ;>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
     <div class="container-sm">
       <a class="" href="#">
         <img src="./img/logo.png" alt="">
@@ -93,35 +93,25 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item p-2">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">Project</a>
           </li>
           <li class="nav-item p-2">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">Skill</a>
           </li>
           <li class="nav-item p-2">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">More Info</a>
           </li>
-          <li class="nav-item dropdown p-2">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+          <li class="nav-item p-2">
+            <a class="nav-link" href="#">Contanct</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <div id="carouselExampleFade" class="banner carousel slide carousel-fade" data-bs-ride="carousel" style="max-height: 100vh;">
+  <div id="carouselExampleFade" class="banner carousel slide carousel-fade" data-bs-ride="carousel"
+    style="max-height: 100vh;">
     <div class="carousel-inner " style="height: 100%;">
-      <div class="carousel-item active" style="background-image:url(https://fakeimg.pl/150x150/);">
+      <div class="carousel-item active" style="background-image:url(./img/photo1.jpg);">
         <!-- <img src="https://fakeimg.pl/100x50/" class="d-block w-100 img-fluid" alt="..."> -->
         <h2>Lorem ipsum </h2>
         <p>Lorem ipsum dolor sit amet </p>
@@ -130,38 +120,52 @@
           <a href=".works"></a>
         </div>
       </div>
-      <div class="carousel-item1" style="background-image:url(https://fakeimg.pl/100x150/)">
+      <div class="carousel-item" style="background-image:url(./img/photo2.jpg)">
         <h2>Lorem ipsum dolor .</h2>
         <p>Lorem ipsum dolor sit amet consectetur .</p>
       </div>
-      <div class="carousel-item1" style="background-image:url(https://fakeimg.pl/100x150/)">
+      <div class="carousel-item" style="background-image:url(./img/photo3.jpg)">
         <h2>Lorem ipsum dolor sit amet.</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
     </div>
   </div>
 
   <main class="container-fluid">
     <div class="container text-center p-2">
-      <h3>Lorem, ipsum dolor.</h3>
+      <h3>Recent Project</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      <div class="row works">
+      <div class="row works text-start">
         <div class="col-sm-6" style="background-image: url(https://fakeimg.pl/100x50/);">
           <div style="height:100px"></div>
         </div>
-        <div class="col-sm-6 sm-hide">
-          <h3>title</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, dolorem?</p>
+        <div class="col-sm-6 sm-hide ">
+          <h3>Nextmeal</h3>
+          <p>
+            An online platform, built by a group of 3, for users to readily access and order awesome food nearby at a
+            reasonable price. Dashboards with data visualization are also developed for restaurant owners and admin.</p>
         </div>
         <div class="col-sm-6 sm-hide">
-          <h3>title</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, dolorem?</p>
+          <h3>Placeholder Image Helper</h3>
+          <p>
+            A functional Google Chrome Extension that helps users readily generate placeholder images and find the right
+            royalty-free images with accessible links of all sizes listed on a report that can be copied and used right
+            away!</p>
         </div>
-        <div class="col-sm-6" style="background-image: url(https://fakeimg.pl/100x50/);">Lorem ipsum dolor sit.</div>
-        <div class="col-sm-6" style="background-image: url(https://fakeimg.pl/100x50/);">Lorem ipsum dolor sit.</div>
+        <div class="col-sm-6" style="background-image: url(https://fakeimg.pl/100x50/);"></div>
+        <div class="col-sm-6" style="background-image: url(https://fakeimg.pl/100x50/);"></div>
         <div class="col-sm-6 sm-hide">
-          <h3>title</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, dolorem?</p>
+          <h3>Expense Tracker</h3>
+          <p>
+            A practical web application built with Node.js, Express, and MongoDB for you to readily record, view, and
+            manage your expense with an account: Create, view, edit, delete, filter expenses are as easy as pie</p>
         </div>
       </div>
     </div>
@@ -179,8 +183,9 @@
             <h2>前端技能</h2>
             <div class="row justify-content-center">
               <div class="col-1 ">
-                <img src="https://fakeimg.pl/100x100/" alt="Vue.js Logo" class="d-block w-100">
-                <span class="d-none">Vue.js</span>
+                <!-- <img src="https://fakeimg.pl/100x100/" alt="Vue.js Logo" class="d-block w-100"> -->
+                <i class="fab fa-html5"></i>
+                <span class="d-">Vue.js</span>
               </div>
               <div class="col-1">
                 <img src="https://fakeimg.pl/100x100/" alt="JavaScript Logo" class="d-block w-100">
