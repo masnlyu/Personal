@@ -93,10 +93,10 @@
             <a class="nav-link active btn" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item p-2">
-            <a class="nav-link btn" href="#Project">Project</a>
+            <a class="nav-link btn" href="#Skill">Skill</a>
           </li>
           <li class="nav-item p-2">
-            <a class="nav-link btn" href="#Skill">Skill</a>
+            <a class="nav-link btn" href="#Project">Project</a>
           </li>
           <li class="nav-item p-2">
             <a class="nav-link btn" href="#More Info">More Info</a>
@@ -139,76 +139,112 @@
   </div>
 
   <main class="container-fluid">
-    <div class="container text-center p-2" id="Project">
-      <h3>Recent Project</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      <div class="row works text-start">
-        <div class="col-sm-6" style="background-image: url(https://fakeimg.pl/100x50/);">
-          <div style="height:100px"></div>
-        </div>
-        <div class="col-sm-6 sm-hide ">
-          <h3>Nextmeal</h3>
-          <p>
-            An online platform, built by a group of 3, for users to readily access and order awesome food nearby at a
-            reasonable price. Dashboards with data visualization are also developed for restaurant owners and admin.</p>
-        </div>
-        <div class="col-sm-6 sm-hide">
-          <h3>Placeholder Image Helper</h3>
-          <p>
-            A functional Google Chrome Extension that helps users readily generate placeholder images and find the right
-            royalty-free images with accessible links of all sizes listed on a report that can be copied and used right
-            away!</p>
-        </div>
-        <div class="col-sm-6" style="background-image: url(https://fakeimg.pl/100x50/);"></div>
-        <div class="col-sm-6" style="background-image: url(https://fakeimg.pl/100x50/);"></div>
-        <div class="col-sm-6 sm-hide">
-          <h3>Expense Tracker</h3>
-          <p>
-            A practical web application built with Node.js, Express, and MongoDB for you to readily record, view, and
-            manage your expense with an account: Create, view, edit, delete, filter expenses are as easy as pie</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="row bg-danger">
+    <div class="row">
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
             aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner skill" id="Skill">
+        <div class="carousel-inner skill row" id="Skill">
           <div class="carousel-item active " data-bs-interval="10000">
             <h2>前端技能</h2>
+            <div class="row justify-content-center ">
+              <div class="col-1 ">
+                <img src="./img/Html5.png" alt="Vue.js Logo" class="d-block w-100">
+                <span class="d-none">Html5</span>
+              </div>
+              <div class="col-1">
+                <img src="/img/css.png" alt="JavaScript Logo" class="d-block w-100">
+                <span class="d-none">Css</span>
+              </div>
+              <div class="col-1">
+                <img src="./img/Javascript.png" alt="Sass Logo" class="d-block w-100">
+                <span class="d-none">JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <h2>框架</h2>
             <div class="row justify-content-center">
               <div class="col-1 ">
-                <!-- <img src="https://fakeimg.pl/100x100/" alt="Vue.js Logo" class="d-block w-100"> -->
-                <i class="fab fa-html5"></i>
-                <span class="d-">Vue.js</span>
+                <img src="./img/Bootstrap.png" alt="Vue.js Logo" class="d-block w-100">
+                <span class="d-">Bootstrap</span>
               </div>
               <div class="col-1">
-                <img src="https://fakeimg.pl/100x100/" alt="JavaScript Logo" class="d-block w-100">
-                <span class="">JavaScript</span>
-              </div>
-              <div class="col-1">
-                <img src="https://fakeimg.pl/100x100/" alt="Sass Logo" class="d-block w-100">
-                <span class="">Sass/SCSS</span>
-              </div>
-              <div class="col-1">
-                <img src="https://fakeimg.pl/100x100/" alt="Bootstrap Logo" class="d-block w-100">
-                <span class="">Bootstrap</span>
+                <img src="/img/Vuejs.png" alt="JavaScript Logo" class="d-block w-100">
+                <span class="d-none">Vue.js</span>
               </div>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="10000">
             <h2>工具&其他</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quasi!</p>
+            <div class="row justify-content-center">
+              <div class="col-1 ">
+                <img src="./img/github.png" alt="Vue.js Logo" class="d-block w-100">
+                <span class="d-">GitHub</span>
+              </div>
+              <div class="col-1">
+                <img src="/img/Git.png" alt="JavaScript Logo" class="d-block w-100">
+                <span class="d-none">Git</span>
+              </div>
+              <div class="col-1">
+                <img src="/img/Visual_Studio_Code.png" alt="JavaScript Logo" class="d-block w-100">
+                <span class="d-none">VisualStudioCode</span>
+              </div>
+              <div class="col-1">
+                <img src="/img/Google.png" alt="JavaScript Logo" class="d-block w-100">
+                <span class="d-none">Google</span>
+              </div>
+            </div>
           </div>
         </div>
 
       </div>
     </div>
+    <div class="row" style="background-color: #f5f5f5;">
+      <div class="container text-center p-2" id="Project">
+        <div class="row">
+        <h3>Recent Project</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="row works text-start">
+          <div class="col-sm-6" style="background-image: url(https://fakeimg.pl/100x50/);">
+            <div style="height:100px"></div>
+          </div>
+          <div class="col-sm-6 sm-hide ">
+            <h3>Nextmeal</h3>
+            <p>
+              An online platform, built by a group of 3, for users to readily access and order awesome food nearby at a
+              reasonable price. Dashboards with data visualization are also developed for restaurant owners and admin.
+            </p>
+          </div>
+          <div class="col-sm-6 sm-hide">
+            <h3>Placeholder Image Helper</h3>
+            <p>
+              A functional Google Chrome Extension that helps users readily generate placeholder images and find the
+              right
+              royalty-free images with accessible links of all sizes listed on a report that can be copied and used
+              right
+              away!</p>
+          </div>
+          <div class="col-sm-6" style="background-image: url(https://fakeimg.pl/100x50/);"></div>
+          <div class="col-sm-6" style="background-image: url(https://fakeimg.pl/100x50/);"></div>
+          <div class="col-sm-6 sm-hide">
+            <h3>Expense Tracker</h3>
+            <p>
+              A practical web application built with Node.js, Express, and MongoDB for you to readily record, view, and
+              manage your expense with an account: Create, view, edit, delete, filter expenses are as easy as pie</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
 
 
 
