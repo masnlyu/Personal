@@ -10,72 +10,6 @@
   <link rel="stylesheet" href="./bootstrap-5.1.3/css/bootstrap.css">
   <link rel="stylesheet" href="./css/all.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
-  <style>
-    .footer {
-      background: lightgray;
-      padding: 0;
-    }
-
-    .end {
-      background: #292929;
-      text-align: center;
-      color: #ffffff;
-      padding: 10px;
-      width: 100%;
-    }
-    .background{
-      background-position: center center;
-      background-size: cover;
-    }
-    .banner>.carousel-inner>.carousel-item {
-      background-position: center center;
-      background-size: cover;
-      text-align: center;
-      padding: 15%;
-      height: 75vh;
-    }
-
-    .skill>.carousel-item {
-      text-align: center;
-      padding: 5%;
-    }
-
-    .works>div {
-      margin-top: 10px;
-      padding: 2% 2%;
-    }
-
-    .contact {
-      background: #0080FF;
-
-    }
-
-    .contact-form {
-      width: 50%;
-      padding: 5px;
-
-    }
-
-    #contact-form {
-      width: 50%;
-    }
-
-    
-
-    @media (max-width: 574px) {
-      .sm-hide {
-        display: none;
-      }
-
-      .contact-form {
-        width: 75%;
-      }
-
-      #contact-form {
-        width: 100%;
-      }
-    }
-  </style>
 </head>
 
 <body style="position: relative;">
@@ -142,7 +76,7 @@
   <main class="container-fluid " style="background-image: url(./img/tianjin.jpg);">
 
     <div class="row background" style="background-image: url(./img/buildings.jpg);">
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="min-height: 150px;">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
@@ -151,55 +85,57 @@
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
             aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner skill row" id="Skill">
+        <div class="carousel-inner skill container  " id="Skill">
           <div class="carousel-item active " data-bs-interval="10000">
             <h2>前端技能</h2>
             <div class="row justify-content-center ">
-              <div class="col-1 ">
-                <img src="https://fakeimg.pl/100x100/" alt="Vue.js Logo" class="d-block w-100">
-                <span class="">Html5</span>
+              <div class="col-2 s2 ">
+                <img src="https://fakeimg.pl/100x100/" alt="Vue.js Logo" data-bs-toggle="tooltip"
+                  data-bs-placement="bottom" title="Tooltip on bottom">
               </div>
-              <div class="col-1">
-                <img src="https://fakeimg.pl/100x100/" alt="JavaScript Logo" class="d-block w-100">
-                <span class="">Css</span>
+              <div class="col-2 s2 ">
+                <img src="https://fakeimg.pl/100x100/" alt="JavaScript Logo"  data-bs-toggle="tooltip"
+                data-bs-placement="bottom" title="Tooltip on bottom">
               </div>
-              <div class="col-1">
-                <img src="https://fakeimg.pl/100x100/" alt="Sass Logo" class="d-block w-100">
-                <span class="">JavaScript</span>
+              <div class="col-2 s2 ">
+                <img src="https://fakeimg.pl/100x100/" alt="Sass Logo"  data-bs-toggle="tooltip"
+                data-bs-placement="bottom" title="Tooltip on bottom">
               </div>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="10000">
             <h2>框架</h2>
             <div class="row justify-content-center">
-              <div class="col-1 ">
-                <img src="https://fakeimg.pl/100x100/" alt="Vue.js Logo" class="d-block w-100">
-                <span class="">Bootstrap</span>
+              <div class="col-2 s2">
+                <img src="./img/Bootstrap.png" alt="Vue.js Logo"  data-bs-toggle="tooltip"
+                data-bs-placement="bottom" title="Bootstrap">
+                <span class=""></span>
               </div>
-              <div class="col-1">
-                <img src="https://fakeimg.pl/100x100/" alt="JavaScript Logo" class="d-block w-100">
-                <span class="">Vue.js</span>
+              <div class="col-2 s2">
+                <img src="./img/Vue.png" alt="JavaScript Logo"  data-bs-toggle="tooltip"
+                data-bs-placement="bottom" title="Vue.js">
+                <span class=""></span>
               </div>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="10000">
             <h2>工具&其他</h2>
             <div class="row justify-content-center">
-              <div class="col-1 ">
-                <img src="https://fakeimg.pl/100x100/" alt="Vue.js Logo" class="d-block w-100">
-                <span class="">GitHub</span>
+              <div class="col-lg-2 s2">
+                <img src="./img/github.png" alt="Vue.js Logo"  data-bs-toggle="tooltip"
+                data-bs-placement="bottom" title="GitHub">
               </div>
-              <div class="col-1">
-                <img src="https://fakeimg.pl/100x100/" alt="JavaScript Logo" class="d-block w-100">
-                <span class="">Git</span>
+              <div class="col-lg-2 s2">
+                <img src="./img/Git.png" alt="JavaScript Logo"  data-bs-toggle="tooltip"
+                data-bs-placement="bottom" title="Git">
               </div>
-              <div class="col-1">
-                <img src="https://fakeimg.pl/100x100/" alt="JavaScript Logo" class="d-block w-100">
-                <span class="">VisualStudioCode</span>
+              <div class="col-lg-2 s2">
+                <img src="./img/Visual_Studio_Code.png" alt="JavaScript Logo"  data-bs-toggle="tooltip"
+                data-bs-placement="bottom" title="VSCode">
               </div>
-              <div class="col-1">
-                <img src="https://fakeimg.pl/100x100/" alt="JavaScript Logo" class="d-block w-100">
-                <span class="">Google</span>
+              <div class="col-lg-2 s2">
+                <img src="./img/Google.png" alt="JavaScript Logo"  data-bs-toggle="tooltip"
+                data-bs-placement="bottom" title="Google">
               </div>
             </div>
           </div>
@@ -210,44 +146,46 @@
     <div class="row background" style="background-color: #f5f5f5;">
       <div class=" text-center p-2" id="Project">
         <div class="container">
-        <h3>Recent Project</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <div class="row works text-start">
-          <div class="col-sm-6 background " >
-            <img src="https://fakeimg.pl/350x250/" alt="" class="img-fluid">
-          </div>
-          <div class="col-sm-6 sm-hide ">
-            <h3>Nextmeal</h3>
-            <p>
-              An online platform, built by a group of 3, for users to readily access and order awesome food nearby at a
-              reasonable price. Dashboards with data visualization are also developed for restaurant owners and admin.
-            </p>
-          </div>
-          <div class="col-sm-6 sm-hide">
-            <h3>Placeholder Image Helper</h3>
-            <p>
-              A functional Google Chrome Extension that helps users readily generate placeholder images and find the
-              right
-              royalty-free images with accessible links of all sizes listed on a report that can be copied and used
-              right
-              away!</p>
-          </div>
-          <div class="col-sm-6 background">
-            <img src="https://fakeimg.pl/350x250/" alt="" class="img-fluid">
-          </div>
-          <div class="col-sm-6 background">
-            <img src="https://fakeimg.pl/350x250/" alt="" class="img-fluid">
-          </div>
-          <div class="col-sm-6 sm-hide">
-            <h3>Expense Tracker</h3>
-            <p>
-              A practical web application built with Node.js, Express, and MongoDB for you to readily record, view, and
-              manage your expense with an account: Create, view, edit, delete, filter expenses are as easy as pie</p>
+          <h3>Recent Project</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="row works text-start">
+            <div class="col-sm-6 background ">
+              <img src="https://fakeimg.pl/350x250/" alt="" class="img-fluid w-100">
+            </div>
+            <div class="col-sm-6 sm-hide ">
+              <h3>Nextmeal</h3>
+              <p>
+                An online platform, built by a group of 3, for users to readily access and order awesome food nearby at
+                a
+                reasonable price. Dashboards with data visualization are also developed for restaurant owners and admin.
+              </p>
+            </div>
+            <div class="col-sm-6 sm-hide">
+              <h3>Placeholder Image Helper</h3>
+              <p>
+                A functional Google Chrome Extension that helps users readily generate placeholder images and find the
+                right
+                royalty-free images with accessible links of all sizes listed on a report that can be copied and used
+                right
+                away!</p>
+            </div>
+            <div class="col-sm-6 background">
+              <img src="https://fakeimg.pl/350x250/" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-6 background">
+              <img src="https://fakeimg.pl/350x250/" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-6 sm-hide">
+              <h3>Expense Tracker</h3>
+              <p>
+                A practical web application built with Node.js, Express, and MongoDB for you to readily record, view,
+                and
+                manage your expense with an account: Create, view, edit, delete, filter expenses are as easy as pie</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-</div>
 
 
 
@@ -308,6 +246,12 @@
 
 
   <script src="./bootstrap-5.1.3/js/bootstrap.bundle.js"></script>
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  </script>
 </body>
 
 </html>

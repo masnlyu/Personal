@@ -1,0 +1,85 @@
+body, table, p, div, span, form, input, textarea, select, pre, button, h1, h2, h3, h4, h5, h6 { font-family: "Microsoft JhengHei", 微軟正黑體,  "Microsoft YaHei", 微軟雅黑體, Verdana, Lucida Grande, Sans-serif; }
+.footer {
+    background: lightgray;
+    padding: 0;
+  }
+
+  .end {
+    background: #292929;
+    text-align: center;
+    color: #ffffff;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .background {
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .banner>.carousel-inner>.carousel-item {
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    padding: 15%;
+    height: 75vh;
+  }
+
+  .skill>.carousel-item {
+    text-align: center;
+    padding: 5% ;
+    color: #ffffff;
+  }
+
+  .works>div {
+    margin-top: 10px;
+    padding: 2% 2%;
+  }
+
+  .contact {
+    background: #0080FF;
+
+  }
+
+  .contact-form {
+    width: 50%;
+    padding: 5px;
+
+  }
+
+  #contact-form {
+    width: 50%;
+  }
+
+  .s2 {
+    text-align: center;
+    border-radius: 10%;
+    background-color: rgba(255, 255, 255, 50%);
+    margin-right: 10px;
+    max-width: 100px;
+  }
+  .s2>img{
+    max-width: 100%;
+    padding: 5px;
+    margin: auto;
+  }
+
+
+  @media (max-width: 574px) {
+    .sm-hide {
+      display: none;
+    }
+
+    .contact-form {
+      width: 75%;
+    }
+
+    #contact-form {
+      width: 100%;
+    }
+
+    .s2 {
+      width: 20%;
+    }
+
+  }
