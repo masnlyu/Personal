@@ -24,7 +24,11 @@ body, table, p, div, span, form, input, textarea, select, pre, button, h1, h2, h
     padding: 15%;
     height: 75vh;
   }
-
+.navbar{
+  /* position:fixed; */
+  top: 0;
+  background-color: rgba(255, 255, 255, 85%);
+}
   .skill>.carousel-item {
     text-align: center;
     padding: 5% ;
@@ -63,6 +67,7 @@ body, table, p, div, span, form, input, textarea, select, pre, button, h1, h2, h
     padding: 5px;
     margin: auto;
   }
+
 
 
   @media (max-width: 574px) {

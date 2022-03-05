@@ -13,7 +13,7 @@
 </head>
 
 <body style="position: relative;">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
+  <nav class="navbar navbar-expand-lg navbar-light  w-100 sticky-top " ;>
     <div class="container-sm">
       <a class="" href="#">
         <img src="./img/logo.png" alt="">
@@ -94,12 +94,12 @@
                   data-bs-placement="bottom" title="Tooltip on bottom">
               </div>
               <div class="col-2 s2 ">
-                <img src="https://fakeimg.pl/100x100/" alt="JavaScript Logo"  data-bs-toggle="tooltip"
-                data-bs-placement="bottom" title="Tooltip on bottom">
+                <img src="https://fakeimg.pl/100x100/" alt="JavaScript Logo" data-bs-toggle="tooltip"
+                  data-bs-placement="bottom" title="Tooltip on bottom">
               </div>
               <div class="col-2 s2 ">
-                <img src="https://fakeimg.pl/100x100/" alt="Sass Logo"  data-bs-toggle="tooltip"
-                data-bs-placement="bottom" title="Tooltip on bottom">
+                <img src="https://fakeimg.pl/100x100/" alt="Sass Logo" data-bs-toggle="tooltip"
+                  data-bs-placement="bottom" title="Tooltip on bottom">
               </div>
             </div>
           </div>
@@ -107,13 +107,13 @@
             <h2>框架</h2>
             <div class="row justify-content-center">
               <div class="col-2 s2">
-                <img src="./img/Bootstrap.png" alt="Vue.js Logo"  data-bs-toggle="tooltip"
-                data-bs-placement="bottom" title="Bootstrap">
+                <img src="./img/Bootstrap.png" alt="Vue.js Logo" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                  title="Bootstrap">
                 <span class=""></span>
               </div>
               <div class="col-2 s2">
-                <img src="./img/Vue.png" alt="JavaScript Logo"  data-bs-toggle="tooltip"
-                data-bs-placement="bottom" title="Vue.js">
+                <img src="./img/Vue.png" alt="JavaScript Logo" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                  title="Vue.js">
                 <span class=""></span>
               </div>
             </div>
@@ -122,20 +122,20 @@
             <h2>工具&其他</h2>
             <div class="row justify-content-center">
               <div class="col-lg-2 s2">
-                <img src="./img/github.png" alt="Vue.js Logo"  data-bs-toggle="tooltip"
-                data-bs-placement="bottom" title="GitHub">
+                <img src="./img/github.png" alt="Vue.js Logo" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                  title="GitHub">
               </div>
               <div class="col-lg-2 s2">
-                <img src="./img/Git.png" alt="JavaScript Logo"  data-bs-toggle="tooltip"
-                data-bs-placement="bottom" title="Git">
+                <img src="./img/Git.png" alt="JavaScript Logo" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                  title="Git">
               </div>
               <div class="col-lg-2 s2">
-                <img src="./img/Visual_Studio_Code.png" alt="JavaScript Logo"  data-bs-toggle="tooltip"
-                data-bs-placement="bottom" title="VSCode">
+                <img src="./img/Visual_Studio_Code.png" alt="JavaScript Logo" data-bs-toggle="tooltip"
+                  data-bs-placement="bottom" title="VSCode">
               </div>
               <div class="col-lg-2 s2">
-                <img src="./img/Google.png" alt="JavaScript Logo"  data-bs-toggle="tooltip"
-                data-bs-placement="bottom" title="Google">
+                <img src="./img/Google.png" alt="JavaScript Logo" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                  title="Google">
               </div>
             </div>
           </div>
@@ -244,13 +244,22 @@
 
 
 
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="./bootstrap-5.1.3/js/bootstrap.bundle.js"></script>
   <script>
+    $(window).scroll(function () {
+      if ($(window).scrollTop() <50) {
+        $('.navbar').css({backgroundColor: "rgba(255, 255, 255, 85%)"});
+      } else {
+        $('.navbar').css({backgroundColor: "rgba(255, 255, 255, 85%)"});
+
+      }
+    });
+
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
       return new bootstrap.Tooltip(tooltipTriggerEl)
-    })
+    });
   </script>
 </body>
 
